@@ -1,0 +1,98 @@
+/* Trabalho 2 - */
+
+body{  	
+    font: 85% Georgia, serif;
+	margin: 0;  	
+	padding: 0;  
+} 
+
+#centralizar{
+    text-align: center;
+}
+
+/* Estilo do Cabeçalho */
+
+#cabecalho{ 
+    padding: 30px;
+    margin-bottom: 30px;
+    
+    line-height: 2.1428571435;
+    color: inherit;
+    background-color: #eeeeee;
+	text-align: center;
+	border-bottom: 1px solid #800000;
+    padding: 2px 0;
+	margin-bottom: 22px;
+
+    /* Estilos anteriores:
+        background: #FAEBD7;
+        color: #000000;
+        font-size: 21px;
+        font-weight: 200;
+        height: 45px;
+	    width: 100%;
+    */
+}
+
+#cabecalho ul{
+	margin: 0 0 0 20px;
+	padding: 0;
+	list-style-type: none;
+	border-left: 1px solid #800000;
+}
+
+#cabecalho li{
+    display: inline-block;
+	padding: 0 10px;
+	border-right: 1px solid #800000;
+}
+
+#cabecalho li a{
+	text-decoration: none;
+	color: #000000;
+}
+
+#cabecalho li a:hover{
+	text-decoration: none;
+	color: #fff;
+	background-color: #eeeeee;
+}
+
+/* Estilo do Container Geral */
+
+#containerMirror{
+    color: #000000; 	
+    height: 45px;
+	width: 100%;
+	text-align: left;
+	border-bottom: 1px solid #800000;
+}
+
+#containerTabela{
+    color: #000000; 	
+    height: 45px;
+	width: 100%;
+	text-align: left;
+    width: 25% !important;
+    margin: auto;
+}
+
+#containerForm{
+    color: #000000; 	
+    height: 45px;
+	width: 100%;
+	text-align: left;
+}
+
+/* Estilo do Rodapé */
+
+#rodape{
+    clear: both;
+	text-align: right;
+	padding: 5px;
+
+    /* Estilos anteriores:
+        clear: both;  	
+	    background: #FF9;*/
+    */
+} 

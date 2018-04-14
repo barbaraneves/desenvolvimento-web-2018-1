@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<!-- Parte 3 do trabalho 2 -->
+
+<html>
+<head>
+	<title>Formulário para Cadastro</title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="CSS/estilos.css">
+	<link rel="stylesheet" href="CSS/bootstrap.css">
+</head>
+
+<body>
+	<div id="cabecalho">
+		<h1>Formulário para Cadastro</h1><br>
+		<!-- <p>Preencha seus dados pessoais abaixo:</p> -->  		
+		<ul>  			
+			<li><a href="#">Início</a></li>
+			<li><a href="#">Seu Cadastro</a></li>  			
+			<li><a href="#">Formulários</a></li>  			  		
+		</ul>  	
+	</div>
+
+	<div id="containerForm">
+	
+	<!-- Usando bootstrap para o formulário -->
+
+	<div class="container">
+		<div class="painel painel-sucess">
+			<form>
+				<fieldset>
+					<legend>Preencha seus dados pessoais abaixo:</legend>
+
+					<div class="form-group">
+						<label for="name">Nome</label>
+						<input type="text" class="form-control" 
+							id="nome" name="nome" autofocus>						
+					</div>
+				</fieldset>
+
+				<fieldset>	
+					<div class="form-group">
+						<label for="CPF">CPF</label>
+						<input type="text" class="form-control"
+						id="CPF" name="CPF" placeholder="000.000.000-00">
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<div class="form-group">
+						<label for="data">Data de Nascimento</label>
+						<input type="date" class="form-control" id="data"
+							name="data" placeholder="00/00/0000">
+					</div>
+				</fieldset>
+					
+				<fieldset>
+					<div class="form-group">
+						<label for="email">E-mail</label>
+
+						<div class="input-group">
+							<span class="input-group-addon">@</span>
+							<input type="email" class="form-control" id="email" 
+								name="email" placeholder="email@exemplo.com">
+						</div>
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<div class="form-group">
+						<label for="telefone">Telefone</label>
+						<input type="text" class="form-control" id="telefone" 
+							name="telefone" placeholder="(00) 0.0000-0000">
+						</div>
+				</fieldset>
+
+				<div class="form-group">
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" id="gridCheck">
+						<label class="form-check-label" for="gridCheck">
+							Não sou um robô
+						</label>
+					</div>
+				</div>
+
+				<button type="submit" class="btn btn-primary">Enviar</button>
+				<button type="submit" class="btn btn-primary">Cancelar</button>
+			</form>
+
+	<div id="rodape">  		
+		Copyright © Bárbara Neves - Web, 2018 
+</body>
+</html>
