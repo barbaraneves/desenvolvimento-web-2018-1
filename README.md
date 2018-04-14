@@ -12,5 +12,12 @@ Parte 3 - Página HTML com um formulário para cadastro de dados pessoais como: 
 Parte 1 - Usar CSS para estilizar as páginas criadas na Atividade 1 com um único arquivo CSS externo a ser usado e compartilhado pelas 3 páginas, sendo que todas elas devem ter um cabeçalho, um container geral com seu conteúdo, e um rodapé;
 
 Parte 2 - Página utilizando HTML e CCS, com as classes do Bootstrap;
-- Atividade 3: alguns exercícios em JavaScript (ler exerciciosJavaScript.pdf).
+- Atividade 3: alguns exercícios em JavaScript presentes em exerciciosJavaScript.pdf.
+
+- Atividade 3.1/Extra: 
+
+Parte 1 - Página HTML para calcular e exibir na tela o valor do Índice de Massa Corporal (IMC) e sua classificação;
+
+Parte 2 - Página HTML de notícias com poucas notícias (no minimo 3 notícias) e um botão "Mais notícias";
+
 
