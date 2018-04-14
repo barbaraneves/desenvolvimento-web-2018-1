@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<!-- Validando formulários -->
+
+<html>
+    <head>
+        <title>Formulário com JavaScript</title>
+        <meta charset="utf-8">
+
+        <script>
+            function valida(){
+                if(regForm.nome.value == ""){
+                    alert("Você esqueceu de fornecer seu nome!");
+                    return;
+                }
+                else{
+                    alert("Nome registrado com sucesso ;)")
+                    regForm.submit();
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Formulário de Registro</h1>
+        <hr>
+        <form name="regForm">
+            Nome: <input name="nome" type="text" size="20" maxlength="40" value=""><br><br>
+            <input type="button" value="Registrar" onclick="valida()">
+        </form>
+    </body>
+</html>

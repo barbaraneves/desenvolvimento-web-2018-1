@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Exercícios JS: Questão 3</title>
+    </head>
+
+    <body>
+        <!-- Parte 2 da questão 3: 
+        <script type="text/javascript" src="JS/script.js"> -->
+
+            <!-- Parte 1 da questão 3:
+                alert('Olá, mundo!') -->
+
+            <!-- Parte 3 da questão 3:
+                alert(2 + 2); -->
+
+        <!-- Parte 4 da questão 3:
+
+            <p>Preencha qualquer coisa e depois clique no botão abaixo:</p>
+
+            <input type="text" name="nome" id="nome" value="Preencha aqui">
+            <button id="botao">Clique aqui!</button>
+            
+            <script type="text/javascript">
+                document.getElementById("botao").addEventListener('click',
+                    function(){
+                        var texto = document.getElementById("texto").value; 
+                        alert(texto);
+                    }
+                );
+            </script> 
+        -->
+
+        <!-- Parte 6 da questão 3: -->
+        <img onmouseover="lampadaOn()" onmouseout="lampadaOff()" src="https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada.jpg?raw=true" alt="Lâmpada" id="lamp"><br><br>
+    
+        <script type="text/javascript">
+            function lampadaOn(){
+                document.getElementById("lamp").src = 'https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada-on.jpg?raw=true';
+            }
+
+            function lampadaOff(){
+                document.getElementById("lamp").src = 'https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada.jpg?raw=true';
+            }
+
+            //Parte 10 da questão 3:
+            valor1 = 2;
+            valor2 = 6;
+            resultado = valor1 + valor2;
+            document.write("A soma dos dois valores é: " + resultado + ".");
+        </script>
+    </body>
+</html>

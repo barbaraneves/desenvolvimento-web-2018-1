@@ -1,0 +1,26 @@
+<!DOCTYPE html>	
+
+<!-- Associando eventos a botões de formulário -->
+
+<html>
+    <head>
+        <title>Botão de teste</title>
+        <meta charset="utf-8">
+
+        <script type="text/javascript">
+            function iTeste(){
+                document.write(
+                    "<h1>Oi</h1><p>Após o <i>clique</i>, o documento foi reescrito.<br>O título também!</p>"
+                )
+                document.title="Novo teste"
+            }
+        </script>
+    </head>
+
+    <body>
+        <form name="meuForm">
+            <input type="button" name="botao" value="Teste"
+                onclick="iTeste()">
+        </form>
+    </body>
+</html>

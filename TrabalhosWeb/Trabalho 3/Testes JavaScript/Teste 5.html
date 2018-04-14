@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<!-- Construindo uma calculadora simples -->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <script>
+            function calcula(form){
+                if(confirm("Tem certeza?")){
+                    form.result.value = eval(form.expr.value);
+                }else{
+                    alert("Tente novamente!");
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Calculadora</h1>
+
+        <form>
+            Forneça uma expressão matemática: 
+            <input type="text" name="expr" size="15">
+            <p>
+                <input type="button" value="Calcule" onclick="calcula(this.form)">
+                <input type="reset" value="Limpar">
+            </p>
+
+            Resultado: 
+            <input type="text" name="result" size="15">
+        </form>
+    </body>
+</html>

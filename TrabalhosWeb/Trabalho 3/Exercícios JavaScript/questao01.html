@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<!-- Questão 1 da lista de JavaScript -->
+
+<html>
+    <head>
+        <title>Organizações Tabajara</title>
+        <meta charset="utf-8">
+
+        <!-- Uso do Bootstrap para o organização -->
+        <link rel="stylesheet" href="Bootstrap/bootstrap.css">
+
+        <style>
+            #imagem{
+                width: 360px;
+                height: 205px;
+            }
+        </style>
+
+        <script>
+            function logoColorida(){
+                document.getElementById("imagem").src="Imagem/orgColorido.jpg";
+            }
+
+            function logoCinza(){
+                document.getElementById("imagem").src="Imagem/orgCinza.jpg";
+            }
+
+            function reajusteSalario(form){
+                valorAumentoAux = 0;
+                salarioAtualAux = 0;
+
+                if(form.salario.value <= 280){
+                    form.salarioAnterior.value = "R$ " + form.salario.value + ",00";
+                    form.percentual.value = 20 + "%";
+                    valorAumentoAux = form.salario.value * 0.20;
+                    form.valorAumentoAuxAumento.value = "R$ " + valorAumentoAux + ",00";
+                    salarioAtualAux = parseFloat(form.salario.value) + parseFloat(valorAumentoAux);
+                    form.salarioAtual.value = "R$ " + salarioAtualAux + ",00";
+                }
+                else if(form.salario.value > 280 && form.salario.value <= 700){
+                    form.salarioAnterior.value = "R$ " + form.salario.value + ",00";
+                    form.percentual.value = 15 + "%";
+                    valorAumentoAux = form.salario.value * 0.15;
+                    form.valorAumentoAuxAumento.value = "R$ " + valorAumentoAux + ",00";
+                    salarioAtualAux = parseFloat(form.salario.value) + parseFloat(valorAumentoAux);
+                    form.salarioAtual.value = "R$ " + salarioAtualAux + ",00";
+                }
+                else if(form.salario.value > 700 && form.salario.value <= 1500){
+                    form.salarioAnterior.value = "R$ " + form.salario.value + ",00";
+                    form.percentual.value = 10 + "%";
+                    valorAumentoAux = form.salario.value * 0.10;
+                    form.valorAumentoAuxAumento.value = "R$ " + valorAumentoAux + ",00";
+                    salarioAtualAux = parseFloat(form.salario.value) + parseFloat(valorAumentoAux);
+                    form.salarioAtual.value = "R$ " + salarioAtualAux + ",00";
+                }else{
+                    form.salarioAnterior.value = "R$ " + form.salario.value + ",00";
+                    form.percentual.value = 5 + "%";
+                    valorAumentoAux = form.salario.value * 0.5;
+                    form.valorAumentoAuxAumento.value = "R$ " + valorAumentoAux + ",00";
+                    salarioAtualAux = parseFloat(form.salario.value) + parseFloat(valorAumentoAux);
+                    form.salarioAtual.value = "R$ " + salarioAtualAux + ",00";
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <b><h1 align="center">Organizações Tabajara</h1></b><br>
+        
+        <div style="text-align: center">
+            <img onmouseover="logoColorida()" onmouseout="logoCinza()" id="imagem" src="Imagem/orgCinza.jpg"><br><br><br>
+        </div>
+
+        <!--
+            <h3 align="center">Aumento de Salário</h3>
+        -->
+
+        <div class="container">
+            <div class="painel painel-sucess">
+            <form>
+                <legend><b>Aumento de Salário</b></legend>
+
+                <fieldset>
+                    <label>Informe o salário atual:</label>
+
+                    <div class="form-group">
+                        <input type="text" name="salario" size="20">
+                        <!-- Depois testar com <button></button> -->
+                        <input type="button" value="Reajuste" onclick="reajusteSalario(this.form)">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <label>Salário antes do reajuste:</legend>
+
+                    <div class="form-group">
+                        <input type="text" name="salarioAnterior" size="20">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <label>Percentual do aumento aplicado:</label>
+                    
+                    <div class="form-group">
+                        <input type="text" name="percentual" size="20">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <label>ValorAumentoAux do aumento:</label>
+
+                    <div class="form-group">    
+                        <input type="text" name="valorAumentoAuxAumento" size="20">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <label>Novo salário, após o aumento:</label>
+                    
+                    <div class="form-group">
+                        <input type="text" name="salarioAtual" size="20">
+                    </div>
+                </fieldset><br><br>
+
+                <fieldset>
+                    <div style="text-align: center">
+                        <label>Deseja fazer um novo reajuste?</label><br>
+                            <input type="reset" value="Novo Reajuste">
+                    </div>
+                </fieldset><br><br>
+            </form>
+
+            <div style="text-align: right">
+		        Copyright © Bárbara Neves - Web, 2018
+	        </div>
+    </body>
+</html>
