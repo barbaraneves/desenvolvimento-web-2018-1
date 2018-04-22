@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<!-- Primeira questão da lista de JQuery -->
+
+<html>
+
+<head>
+    <title>Índice de Massa Corporal</title>
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+
+    <script src="JQuery/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#calcular').click(function(){
+                var peso = $('#peso').val();
+                var altura = $('#altura').val();
+                var classificacao;
+
+                var imc = peso/(altura * altura);
+
+                if(imc < 16){
+                    classificacao = "Abaixo do peso (magreza grave)";
+                }
+                else if(imc >= 16 && imc < 17){
+                    classificacao = "Abaixo do peso (magreza moderada)";
+                }
+                else if(imc >= 17 && imc < 18.5){
+                    classificacao = "Abaixo do peso";
+                }
+                else if(imc >= 18.5 && imc < 25){
+                    classificacao = "Peso normal";
+                }
+                else if(imc >= 25 && imc < 30){
+                    classificacao = "Sobrepeso";
+                }
+                else if(imc >= 30 && imc < 35){
+                    classificacao = "Obesidade Grau I";
+                }
+                else if(imc >= 35 && imc < 40){
+                    classificacao = "Obesidade Grau II \n (severa)";
+                }else{
+                    classificacao = "Obesidade Grau III \n (mórbida)";
+                }
+                $('#resultadoIMC').text(imc.toFixed(1) + " kg/m²");
+                $('#classif').text(classificacao);
+            });
+        });
+
+        $(document).ready(function(){
+            $('#imgIMC').hover(function(){
+                document.getElementById("imgIMC").src = 'Imagens/imcCinza.png';
+            }, function(){
+                document.getElementById("imgIMC").src = 'Imagens/imc.png';
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="jumbotron" style="background-color: lightsalmon">
+		<div class="container">
+			<h1>Deseja calcular seu IMC?</h1>
+
+			<p>Uma medida da gordura corporal em adultos.</p>
+		</div>
+	</div>
+
+    <div class="container">
+		<div class="row">
+
+			<div class="col-sm-3">
+                <div class="panel-body" class="hidden-xs" style="text-align:center">
+					<img src="Imagens/imc.png" alt="Calculadora de IMC" id="imgIMC" class="img-thumbnail img-responsive">
+				</div>
+			</div>
+
+            <form class="col-sm-8">
+                <fieldset>
+                    <div class="panel panel-default" style="text-align: center">
+                        <h3>Calculadora de Índice de Massa Corporal (IMC)</h3>
+				    </div>
+                </fieldset>
+
+                <fieldset class="col-md-6">
+                    <div style="background-color: lightsalmon; text-align: center">	
+                        <legend>Dados Pessoais</legend>
+                    </div>
+
+                    <div class="form-group">	
+						<label>Seu peso:</label>
+
+                        <div class="input-group">	
+                            <input type="text" class="form-control" id="peso" autofocus>
+                            <span class="input-group-addon" 
+                                style="background-color: lightsalmon">kg</span>
+                        </div>	
+					</div>	
+
+                    <div class="form-group">	
+						<label>Sua altura:</label>
+
+                        <div class="input-group">	
+                            <input type="text" class="form-control" id="altura"
+                                autofocus placeholder="0.00">
+                            <span class="input-group-addon" 
+                                style="background-color: lightsalmon">m</span>
+                        </div>	
+					</div>	
+                        
+                    <input type="button" class="btn btn-primary btn-lg pull-left"
+                        id="calcular" value="Calcular IMC">
+                </fieldset>
+
+                <fieldset class="col-md-6">	
+					<div style="background-color: lightsalmon; text-align: center">	
+                        <legend>Resultado</legend>
+                    </div>
+
+                    <div class="form-group">
+                        <label>IMC:</label><br>
+
+                        <div class="label-group" style="text-align: center">
+                            <label type="text" class="form-control"	
+                                id="resultadoIMC">
+                            <span class="label-group-addon"><b>0.00 kg/m²</br></span>
+                        </div> 
+					</div>
+
+                    <div class="form-group">
+                        <label>Sua classificação:</label>
+                            
+                        <div class="label-group" style="text-align: center">
+                            <label type="text" class="form-control"	
+                                id="classif">
+                        </div> 
+                    </div>
+
+                    <input type="reset" class="btn btn-primary btn-lg pull-right" value="Recalcular IMC"><br><br><br><br>
+                </fieldset>
+
+                <div style="text-align: right">
+		            Copyright © Bárbara Neves - Web, UFC, 2018
+	            </div>
+            </form>
+</body>
+
+</html>
