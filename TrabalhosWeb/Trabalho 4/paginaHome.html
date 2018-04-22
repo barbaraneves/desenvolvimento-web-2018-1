@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<!-- Parte 1 do trabalho 4 
+	(a mesma página passada na parte 2 do trabalho 2) -->
+
+<html>	
+    <head>	
+		<meta charset="UTF-8">	
+		<title>Checkout	Mirror Fashion</title>	
+		<meta name="viewport" content="width=device-width">
+
+		<!-- Links para ter acesso ao Bootstrap e ao JQuery (caso precise) -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+</head>	
+
+<body>	
+	<div class="jumbotron">
+		<div class="container">
+			<h1>Ótima escolha!</h1>	
+			<p>Obrigado	por	comprar	na Mirror Fashion!		
+			Preencha seus dados	para efetivar a	compra.</p>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+
+			<div class="col-sm-4">
+				<div class="panel panel-default">
+					<div class="panel panel-sucess">
+						<div class="panel-heading">
+							<h4>Sua	compra</h4>	
+						</div>
+			
+						<div class="panel-body" class="hidden-xs">
+							<img src="Imagens/fuzzy-cardigan.jpg" alt="Fuzzy	Cardigan" class="img-thumbnail img-responsive"> 	
+
+							<dl>	
+								<dt>Produto</dt>	
+								<dd>Fuzzy Cardigan</dd>	
+					
+								<dt>Cor</dt>	
+								<dd>Rosa claro</dd>	
+					
+								<dt>Tamanho</dt>	
+								<dd>40</dd>	
+					
+								<dt>Preço</dt>	
+								<dd>R$ 129,00</dd>	
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<form class="col-sm-8">
+				<div class="row">
+					<fieldset class="col-md-6">	
+						<legend>Dados pessoais</legend><br>	
+
+						<div class="form-group">	
+							<label for="nome">Nome completo</label>	
+							<input type="text" class="form-control"	id="nome" name="nome" autofocus>	
+						</div>	
+						
+						<div class="form-group">	
+							<label for="email">Email</label>
+
+							<div class="input-group">
+								<span class="input-group-addon">@</span>	
+								<input type="email"	class="form-control" 
+									id="email" name="email" placeholder="email@exemplo.com">
+							</div>			
+						</div>	
+					
+						<div class="form-group">	
+							<label for="cpf">CPF</label>	
+							<input type="text" class="form-control"	
+								id="cpf" name="cpf" placeholder="000.000.000-00">	
+						</div>
+
+						<div class="checkbox">	
+							<label>	
+								<input type="checkbox" value="sim" name="spam" checked>	
+									Quero receber spam da Mirror Fashion	
+							</label>	
+						</div>	
+					</fieldset>	
+		
+					<fieldset class="col-md-6">	
+						<legend>Cartão de crédito</legend><br>
+
+						<div class="form-group">
+							<label for="numero-cartao">Número - CVV</label>
+							<input type="text" class="form-control" 
+								id="numero-cartao" name="numero-cartao">
+						</div>
+
+						<div class="form-group">
+							<label for="bandeira-cartao">Bandeira</label>
+							<select name="bandeira-cartao" id="bandeira-cartao"
+								class="form-control">
+								<option value="master">MasterCard</option>
+								<option value="visa">VISA</option>
+								<option value="amex">American Express</option>
+							</select>
+						</div>
+
+						<div class="form-group">
+							<label for="validade-cartao">Validade</label>
+							<input type="month" class="form-control"
+								id="validade-cartao" name="validade-cartao">
+						</div><br><br>
+					</fieldset>	
+		
+					<button	type="submit" class="btn btn-primary btn-lg pull-right">
+						<span class="glyphicon glyphicon-thumbs-up"></span>
+						<!-- <div class="btn-lg">
+							<div class="pull-right">
+							</div>
+						</div> -->
+						Confirmar Pedido	
+					</button>	
+			</form>
+		</div>
+	</div>
+
+	<div style="text-align: right">
+		<b>Copyright © Bárbara Neves - Web, UFC, 2018</b><br><br>
+	</div>
+</body>	
+
+</html>
+

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<!-- Parte 2 do trabalho 4 -->
+
+<html>
+
+<head>
+	<title>Breaking News</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	
+	<!-- Links para ter acesso ao Bootstrap e ao JQuery (caso precise) -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-color: Gainsboro">
+	<div class="jumbotron" style="background-color: FireBrick">
+		<!-- Componente Carousel para mostrar as notícias em destaque no topo da página -->
+		<div class="container">
+			<div id="carouselNoticias" class="carousel slide" data-ride="carousel">
+				<!-- Indicadores -->
+				<ol class="carousel-indicators">
+					<li data-target="#carouselNoticias" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselNoticias" data-slide-to="1"></li>
+					<li data-target="#carouselNoticias" data-slide-to="2"></li>
+				</ol>
+
+				<!-- Customizando os slides -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="Imagens/avicii-death-grey.jpg" alt="Avicii Death" style="width:100%;">
+						<div class="carousel-caption">
+							<h3>Morte do DJ Avicii</h3>
+							<p>Autoridades descartam "suspeita criminal"</p>
+						</div>
+					</div>
+					
+					<div class="item">
+						<img src="Imagens/suicide-bomb-grey.jpg" alt="Suicide Bomb" style="width:100%;">
+						<div class="carousel-caption">
+							<h3>Suicídio</h3>
+							<p>Uma explosão suicida matou 57 pessoas</p>
+						</div>
+					</div>
+
+					<div class="item">
+						<img src="Imagens/plastic-polution-grey.jpg" alt="Plastic Polution" style="width:100%;">
+						<div class="carousel-caption">
+							<h3>Poluição</h3>
+							<p>A poluição por plástico não é apenas no oceano</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Controles -->
+				<a class="left carousel-control" href="#carouselNoticias" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+					<span class="sr-only">Anterior</span>
+				</a>
+				<a class="right carousel-control" href="#carouselNoticias" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+					<span class="sr-only">Próximo</span>
+				</a>
+			</div>
+		</div><br>
+
+		<div style="text-align: center; background-color: Silver">
+			<br>
+			<h1 class="display-4">Breaking News</h1><br>
+			<p class="lead">
+				<a class="btn btn-primary btn-lg" href="https://edition.cnn.com/"
+					role="button" style="background-color:Black">Clique aqui para mais notícias</a>
+			</p><br>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-6 col-md-4">
+			<div class="thumbnail">
+				<img src="Imagens/avicii-death.jpg" alt="Avicii Death">
+				<div class="caption">
+					<h3 align="center">Morte do DJ Avicii</h3>
+					<p>A família de Avicii chega em Oman à medida que novos detalhes surgem em sua morte.</p>
+					<p align="center">
+						<a href="https://edition.cnn.com/2018/04/22/entertainment/avicii-death-foul-play-ruled-out/index.html"
+							class="btn btn-primary" role="button" style="background-color: FireBrick">
+							Saiba mais
+						</a>
+					</p> 
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-6 col-md-4">
+			<div class="thumbnail">
+				<img src="Imagens/suicide-bomb.jpg" alt="Suicide Bomb">
+				<div class="caption">
+					<h3 align="center">Suicídio</h3>
+					<p>Explosão suicida atinge centro de recenseamento eleitoral afegão, matando dezenas.</p>
+					<p align="center">
+						<a href="https://edition.cnn.com/2018/04/22/asia/afghanistan-kabul-blast/index.html"
+							class="btn btn-primary" role="button" style="background-color: FireBrick">
+							Saiba mais
+						</a>
+					</p> 
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-6 col-md-4">
+			<div class="thumbnail">
+				<img src="Imagens/plastic-polution.jpg" alt="Plastic Polution">
+				<div class="caption">
+					<h3 align="center">Poluição</h3>
+					<p>Não são apenas os oceanos: a poluição por microplásticos está à nossa volta.</p>
+					<p align="center">
+						<a href="https://edition.cnn.com/2018/04/22/health/microplastics-land-and-air-pollution-intl/index.html"
+							class="btn btn-primary" role="button" style="background-color: FireBrick">
+							Saiba mais
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div style="text-align: right">
+	    <b>Copyright © Bárbara Neves - Web, UFC, 2018</b><br><br>
+	</div>
+</body>
+
+</html>
