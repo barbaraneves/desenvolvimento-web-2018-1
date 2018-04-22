@@ -19,5 +19,12 @@ Parte 2 - Página utilizando HTML e CCS, com as classes do Bootstrap;
 Parte 1 - Página HTML para calcular e exibir na tela o valor do Índice de Massa Corporal (IMC) e sua classificação;
 
 Parte 2 - Página HTML de notícias com poucas notícias (no minimo 3 notícias) e um botão "Mais notícias";
+- Atividade 4:
+
+Parte 1 - Página HTML que utiliza as classes do Bootstrap;
+
+Parte 2 - Página HTML de notícias usando o Bootstrap;
+
+Parte 3 - Usando o Bootstrap para melhorar o visual das questões 2 (tabela com os índices de inflação usados no Brasil) e 3 (formulário para cadastro de dados pessoais) da Atividade 1;
 
 
