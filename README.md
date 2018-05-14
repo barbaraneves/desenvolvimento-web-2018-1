@@ -33,5 +33,5 @@ Parte 1 - Página HTML para calcular e exibir na tela o valor do Índice de Mass
 Parte 2 - Obter dois números em um formulário Web e após a submissão deste formulário, exibir a soma e a subtração dos números;
 
 Parte 3 - Após o clique em um link, exibir uma sugestão de seis números não repetidos entre 1 e 60 para a Mega-Sena. Esses números devem ser gerados em um Servlet e retornados para exibição no browser do cliente;
-
+- Atividade 6:
 
