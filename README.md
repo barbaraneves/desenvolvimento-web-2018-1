@@ -33,5 +33,7 @@ Parte 1 - Página HTML para calcular e exibir na tela o valor do Índice de Mass
 Parte 2 - Obter dois números em um formulário Web e após a submissão deste formulário, exibir a soma e a subtração dos números;
 
 Parte 3 - Após o clique em um link, exibir uma sugestão de seis números não repetidos entre 1 e 60 para a Mega-Sena. Esses números devem ser gerados em um Servlet e retornados para exibição no browser do cliente;
-- Atividade 6:
+- Atividade 6: Servlet de login onde ele irá autenticar o usuário pelo nome e senha. Caso o nome ou senha não estejam corretos, ele irá redirecionar para a página erro.html informando qual foi o erro. Caso estejam corretos, ele irá para a página sucesso.html. Na página inicial login.html contém um link de logout que redireciona para o Servlet de logout. Esse Servlet elimina a sessão e redireciona o usuário para a página home da aplicação. 
+
+Observações - Esta aplicação não permite acesso não autorizado às suas funcionalidades, ou seja, ela possui um mecanismo de autorização. Por isso, ela possui um filtro que força o login caso o usuário não esteja logado e tente acessar qualquer página que não seja a página de login. 
 
