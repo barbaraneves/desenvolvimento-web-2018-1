@@ -36,4 +36,6 @@ Parte 3 - Após o clique em um link, exibir uma sugestão de seis números na�
 - Atividade 6: Servlet de login onde ele irá autenticar o usuário pelo nome e senha. Caso o nome ou senha não estejam corretos, ele irá redirecionar para a página erro.html informando qual foi o erro. Caso estejam corretos, ele irá para a página sucesso.html. Na página inicial login.html contém um link de logout que redireciona para o Servlet de logout. Esse Servlet elimina a sessão e redireciona o usuário para a página home da aplicação. 
 
 Observações - Esta aplicação não permite acesso não autorizado às suas funcionalidades, ou seja, ela possui um mecanismo de autorização. Por isso, ela possui um filtro que força o login caso o usuário não esteja logado e tente acessar qualquer página que não seja a página de login. 
+- Atividade da Avaliação Parcial I: Site de uma loja de produtos (sem utilizar Bootstrap). 
 
+Observações - "Livraria Floreios e Borrões".
