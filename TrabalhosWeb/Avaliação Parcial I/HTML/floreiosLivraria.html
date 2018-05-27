@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<!-- Desenvolvimento de Software para Web - API 
+     Site de uma loja de produtos: Página dos produtos da loja --> 
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Floreios e Borrões | Produtos</title>
+
+    <link rel="icon" href="../Imagens/icon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="../Imagens/icon.png" type="image/x-icon" />
+
+    <!-- Arquivo CSS onde contém os estilos para as páginas do site -->
+    <link rel="stylesheet" href="../CSS/floreiosEstilos.css">
+
+    <!-- Usando JQuery para os botões da página -->
+    <script src="../JavaScript/jquery.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <b> 
+            Floreios<br>
+            &<br> 
+            Borrões 
+        <b>
+        <!-- <img src="Imagens/header.jpg">
+        <p>Resize the browser window to see the responsive effect.</p>  -->
+    </div>
+
+    <!-- Menu de navegação -->
+    <ul>
+        <b>
+            <li><a href="../HTML/floreiosHome.html">Ínicio</a></li>
+            <li><a href="../HTML/floreiosLivraria.html">Produtos</a></li>
+            <li><a href="../HTML/floreiosDados.html">Sobre</a></li>
+            <li style="float: right"><a href="../HTML/floreiosForm.html">Contato</a></li>
+        </b>
+    </ul><br>
+    
+    <div class="title" id="title1">
+        <h1 style="font-family: Courier New, Courier, monospace; text-align: center">
+            Opções variadas de livros</h1>
+    </div><br>
+
+    <!-- Linha 1 -->
+    <div class="row" id="row1">
+        <div class="col-2" style="margin-left: 30px">
+            <div class="gallery">
+                <a target="_blank" href="../Imagens/Galeria/1.jpg">
+                    <img src="../Imagens/Galeria/1.jpg" width="300" height="200">
+                </a>
+                <div class="desc" >
+                    <div style="text-align: left">
+                        O Mundo Assombrado<br>Pelos Demônios
+                    </div><br>
+                    <div style="text-align: center; font-size: 2vw">
+                        R$ 39,90
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2" style="margin-left: 30px">
+            <div class="gallery">
+                <a target="_blank" href="../Imagens/Galeria/2.jpg">
+                    <img src="../Imagens/Galeria/2.jpg" width="300" height="200">
+                </a>
+                <div class="desc">
+                    <div style="text-align: left">
+                        Bilhões<br>e<br>Bilhões
+                    </div><br>
+                    <div style="text-align: center; font-size: 2vw">
+                        R$ 34,90
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+       <div class="col-2" style="margin-left: 30px">
+            <div class="gallery">
+                <a target="_blank" href="../Imagens/Galeria/3.jpg">
+                    <img src="../Imagens/Galeria/3.jpg"  width="300" height="200">
+                </a>
+                <div class="desc">
+                    <div style="text-align: left">
+                        Alice no País<br>do Quantum
+                    </div><br>
+                    <div style="text-align: center; font-size: 2vw">
+                        R$ 59,90
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2" style="margin-left: 30px">
+            <div class="gallery">
+                <a target="_blank" href="../Imagens/Galeria/4.jpeg">
+                    <img src="../Imagens/Galeria/4.jpeg" width="300" height="200">
+                </a>
+                <div class="desc">
+                    <div style="text-align: left">
+                        O Diabo<br>Veste Prada
+                    </div><br>
+                    <div style="text-align: center; font-size: 2vw">
+                        R$ 29,90
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2" style="margin-left: 30px">
+            <div class="gallery">
+                <a target="_blank" href="../Imagens/Galeria/5.jpg">
+                    <img src="../Imagens/Galeria/5.jpg" width="300" height="200">
+                </a>
+                <div class="desc">
+                    <div style="text-align: left">
+                        A Vingança<br>Veste Prada
+                    </div><br>
+                    <div style="text-align: center; font-size: 2vw">
+                        R$ 36,90
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="title" id="title2">
+        <h1 style="font-family: Courier New, Courier, monospace; text-align: center">
+            Sessão "Harry Potter"<br>e "As Peças Infernais"</h1>
+    </div><br>
+
+    <!-- Linha 2 -->
+    <div class="row" id="row2">
+        <div class="col-2" style="margin-left: 30px">
+            <div class="gallery">
+                <a target="_blank" href="../Imagens/Galeria/6.jpeg">
+                    <img src="../Imagens/Galeria/6.jpeg" width="300" height="200">
+                </a>
+                <div class="desc">
+                    <div style="text-align: left">
+                        Harry Potter e A Pedra Filosofal
+                    </div><br>
+                    <div style="text-align: center; font-size: 2vw">
+                        R$ 38,50
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2" style="margin-left: 30px">
+            <div class="gallery">
+                <a target="_blank" href="../Imagens/Galeria/7.jpg">
+                    <img src="../Imagens/Galeria/7.jpg" width="300" height="200">
+                </a>
+                <div class="desc">
+                    <div style="text-align: left">
+                        Harry Potter e A Câmera Secreta
+                    </div><br>
+                    <div style="text-align: center; font-size: 2vw">
+                        R$ 16,99
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <div class="col-2" style="margin-left: 30px">
+            <div class="gallery">
+                <a target="_blank" href="../Imagens/Galeria/8.jpeg">
+                    <img src="../Imagens/Galeria/8.jpeg" width="300" height="200">
+                </a>
+                <div class="desc">
+                    <div style="text-align: left">
+                        H.P. e O Prisioneiro de Azkaban
+                    </div><br>
+                    <div style="text-align: center; font-size: 2vw">
+                        R$ 17,00
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2" style="margin-left: 30px">
+            <div class="gallery">
+                <a target="_blank" href="../Imagens/Galeria/9.jpeg">
+                    <img src="../Imagens/Galeria/9.jpeg" width="300" height="200">
+                </a>
+                <div class="desc">
+                    <div style="text-align: left">
+                        Harry Potter e O Cálice de Fogo
+                    </div><br>
+                    <div style="text-align: center; font-size: 2vw">
+                        R$ 17,00
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2" style="margin-left: 30px">
+            <div class="gallery">
+                <a target="_blank" href="../Imagens/Galeria/10.jpeg">
+                    <img src="../Imagens/Galeria/10.jpeg" width="300" height="200">
+                </a>
+                <div class="desc">
+                    <div style="text-align: left">
+                        Harry Potter e A Ordem da Fênix
+                    </div><br>
+                    <div style="text-align: center; font-size: 2vw">
+                        R$ 17,00
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botão para ver mais 10 produtos -->
+    <div style="text-align: center">
+        <br>
+        <input type="submit" id="botaoMaisProdutos1" value="Ver mais Produtos">
+    </div>
+
+    <!-- Linha 3 -->
+    <div class="row" id="row3">
+        <div class="col-2" style="margin-left: 30px">
+            <div class="gallery">
+                <a target="_blank" href="../Imagens/Galeria/11.jpg">
+                    <img src="../Imagens/Galeria/11.jpg" width="300" height="200">
+                </a>
+                <div class="desc">
+                    <div style="text-align: left">
+                        Harry Potter e O Enigma do Príncipe 
+                    </div><br>
+                    <div style="text-align: center; font-size: 2vw">
+                        R$ 17,00
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2" style="margin-left: 30px">
+            <div class="gallery">
+                <a target="_blank" href="../Imagens/Galeria/12.jpg">
+                    <img src="../Imagens/Galeria/12.jpg" width="300" height="200">
+                </a>
+                <div class="desc">
+                    <div style="text-align: left">
+                        Harry Potter e As Relíquias da Morte
+                    </div><br>
+                    <div style="text-align: center; font-size: 2vw">
+                        R$ 32,90
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <div class="col-2" style="margin-left: 30px">
+            <div class="gallery">
+                <a target="_blank" href="../Imagens/Galeria/13.jpg">
+                    <img src="../Imagens/Galeria/13.jpg" width="300" height="200">
+                </a>
+                <div class="desc">
+                    <div style="text-align: left">
+                        Anjo<br>Mecânico
+                    </div><br>
+                    <div style="text-align: center; font-size: 2vw">
+                        R$ 29,90
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2" style="margin-left: 30px">
+            <div class="gallery">
+                <a target="_blank" href="../Imagens/Galeria/14.jpg">
+                    <img src="../Imagens/Galeria/14.jpg" width="300" height="200">
+                </a>
+                <div class="desc">
+                    <div style="text-align: left">
+                        Príncipe<br>Mecânico
+                    </div><br>
+                    <div style="text-align: center; font-size: 2vw">
+                        R$ 25,90
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2" style="margin-left: 30px">
+            <div class="gallery">
+                <a target="_blank" href="../Imagens/Galeria/15.jpg">
+                    <img src="../Imagens/Galeria/15.jpg" width="300" height="200">
+                </a>
+                <div class="desc"><br>
+                    <div style="text-align: left">
+                        Princesa<br>Mecânica
+                    </div><br>
+                    <div style="text-align: center; font-size: 2vw">
+                        R$ 25,90
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class="title" id="title3">
+        <h1 style="font-family: Courier New, Courier, monospace; text-align: center">
+            Sessão J.R.R. Tolkien<br>e Carl Sagan</h1>
+    </div><br>
+
+    <!-- Linha 4 -->
+    <div class="row" id="row4">
+        <div class="col-2" style="margin-left: 30px">
+            <div class="gallery">
+                <a target="_blank" href="../Imagens/Galeria/16.jpeg">
+                    <img src="../Imagens/Galeria/16.jpeg" width="300" height="200">
+                </a>
+                <div class="desc">
+                    <div style="text-align: left">
+                        O Andar<br>do Bêbado
+                    </div><br>
+                    <div style="text-align: center; font-size: 2vw">
+                        R$ 36,90
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2" style="margin-left: 30px">
+            <div class="gallery">
+                <a target="_blank" href="../Imagens/Galeria/17.jpg">
+                    <img src="../Imagens/Galeria/17.jpg" width="300" height="200">
+                </a>
+                <div class="desc">
+                    <div style="text-align: left">
+                        Será que Deus<br>Joga Dados?
+                    </div><br>
+                    <div style="text-align: center; font-size: 2vw">
+                        R$ 69,90
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <div class="col-2" style="margin-left: 30px">
+            <div class="gallery">
+                <a target="_blank" href="../Imagens/Galeria/18.jpg">
+                    <img src="../Imagens/Galeria/18.jpg" width="300" height="200">
+                </a>
+                <div class="desc">
+                    <div style="text-align: left">
+                        Rápido<br>e Devagar
+                    </div><br>
+                    <div style="text-align: center; font-size: 2vw">
+                        R$ 38,80
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2" style="margin-left: 30px">
+            <div class="gallery">
+                <a target="_blank" href="../Imagens/Galeria/19.jpg">
+                    <img src="../Imagens/Galeria/19.jpg" width="300" height="200">
+                </a>
+                <div class="desc">
+                    <div style="text-align: left">
+                        A Música dos Números Primos
+                    </div><br>
+                    <div style="text-align: center; font-size: 2vw">
+                        R$ 66,90
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2" style="margin-left: 30px">
+            <div class="gallery">
+                <a target="_blank" href="../Imagens/Galeria/20.jpeg">
+                    <img src="../Imagens/Galeria/20.jpeg" width="300" height="200">
+                </a>
+                <div class="desc">
+                    <div style="text-align: left">
+                        O<br>Silmarillion
+                    </div><br>
+                    <div style="text-align: center; font-size: 2vw">
+                        R$ 19,90
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botão para ver mais 10 produtos -->
+    <div style="text-align: center">
+        <input type="submit" id="botaoMaisProdutos2" value="Ver mais Produtos">
+    </div>
+
+    <!-- Linha 5 -->
+    <div class="row" id="row5">
+        <div class="col-2" style="margin-left: 30px">
+            <div class="gallery">
+                <a target="_blank" href="../Imagens/Galeria/21.jpeg">
+                    <img src="../Imagens/Galeria/21.jpeg" width="300" height="200">
+                </a>
+                <div class="desc">
+                    <div style="text-align: left">
+                        A Sociedade<br>do Anel
+                    </div><br>
+                    <div style="text-align: center; font-size: 2vw">
+                        R$ 36,00
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2" style="margin-left: 30px">
+            <div class="gallery">
+                <a target="_blank" href="../Imagens/Galeria/22.jpg">
+                    <img src="../Imagens/Galeria/22.jpg" width="300" height="200">
+                </a>
+                <div class="desc">
+                    <div style="text-align: left">
+                        As Duas<br>Torres
+                    </div><br>
+                    <div style="text-align: center; font-size: 2vw">
+                        R$ 42,90
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <div class="col-2" style="margin-left: 30px">
+            <div class="gallery">
+                <a target="_blank" href="../Imagens/Galeria/23.jpeg">
+                    <img src="../Imagens/Galeria/23.jpeg" width="300" height="200">
+                </a>
+                <div class="desc">
+                    <div style="text-align: left">
+                        O Retorno<br>do Rei 
+                    </div><br>
+                    <div style="text-align: center; font-size: 2vw">
+                        R$ 49,90
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2" style="margin-left: 30px">
+            <div class="gallery">
+                <a target="_blank" href="../Imagens/Galeria/24.jpg">
+                    <img src="../Imagens/Galeria/24.jpg" width="300" height="200">
+                </a>
+                <div class="desc">
+                    <div style="text-align: left">
+                        Variedades da Experiência Ciêntífica
+                    </div><br>
+                    <div style="text-align: center; font-size: 2vw">
+                        R$ 38,70
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2" style="margin-left: 30px">
+            <div class="gallery">
+                <a target="_blank" href="../Imagens/Galeria/25.jpg">
+                    <img src="../Imagens/Galeria/25.jpg" width="300" height="200">
+                </a>
+                <div class="desc">
+                    <div style="text-align: left">
+                        Os Dragões do Éden
+                    </div><br>
+                    <div style="text-align: center; font-size: 2vw">
+                        R$ 93,90
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="title" id="title4">
+        <h1 style="font-family: Courier New, Courier, monospace; text-align: center">
+            Sessão "Guia do Mochileiro das Galáxias<br>(Trilogia de Cinco)"</h1>
+    </div><br>
+
+    <!-- Linha 6 -->
+    <div class="row" id="row6">
+        <div class="col-2" style="margin-left: 30px">
+            <div class="gallery">
+                <a target="_blank" href="../Imagens/Galeria/26.jpeg">
+                    <img src="../Imagens/Galeria/26.jpeg" width="300" height="200">
+                </a>
+                <div class="desc">
+                    <div style="text-align: left">
+                        O Guia do Mochileiro das Galáxias
+                    </div><br>
+                    <div style="text-align: center; font-size: 2vw">
+                        R$ 9,90
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2" style="margin-left: 30px">
+            <div class="gallery">
+                <a target="_blank" href="../Imagens/Galeria/27.jpg">
+                    <img src="../Imagens/Galeria/27.jpg" width="300" height="200">
+                </a>
+                <div class="desc">
+                    <div style="text-align: left">
+                        O Restaurante<br>no Fim do Universo
+                    </div><br>
+                    <div style="text-align: center; font-size: 2vw">
+                        R$ 9,90
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <div class="col-2" style="margin-left: 30px">
+            <div class="gallery">
+                <a target="_blank" href="../Imagens/Galeria/28.jpeg">
+                    <img src="../Imagens/Galeria/28.jpeg" width="300" height="200">
+                </a>
+                <div class="desc">
+                    <div style="text-align: left">
+                        A Vida, O Universo<br>e Tudo Mais
+                    </div><br>
+                    <div style="text-align: center; font-size: 2vw">
+                        R$ 9,90
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2" style="margin-left: 30px">
+            <div class="gallery">
+                <a target="_blank" href="../Imagens/Galeria/29.jpeg">
+                    <img src="../Imagens/Galeria/29.jpeg" width="300" height="200">
+                </a>
+                <div class="desc">
+                    <div style="text-align: left">
+                        Até Mais, e Obrigado Pelos Peixes!
+                    </div><br>
+                    <div style="text-align: center; font-size: 2vw">
+                        R$ 9,90
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2" style="margin-left: 30px">
+            <div class="gallery">
+                <a target="_blank" href="../Imagens/Galeria/30.jpg">
+                    <img src="../Imagens/Galeria/30.jpg" width="300" height="200">
+                </a>
+                <div class="desc">
+                    <div style="text-align: left">
+                        Praticamente Inofensiva
+                    </div><br>
+                    <div style="text-align: center; font-size: 2vw">
+                        R$ 9,90
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botões para ver menos 5 produtos -->
+    <div style="text-align: center">
+        <input type="submit" id="botaoMenosProdutos1" value="Ver menos Produtos">
+    </div>
+
+    <div style="text-align: center">
+        <input type="submit" id="botaoMenosProdutos2" value="Ver menos Produtos">
+    </div>
+
+    <div style="text-align: center">
+        <input type="submit" id="botaoMenosProdutos3" value="Ver menos Produtos">
+    </div>
+
+    <div style="text-align: center">
+        <input type="submit" id="botaoMenosProdutos4" value="Ver menos Produtos">
+    </div>
+
+    <!-- Script para os botões da página  -->
+    <script>
+        //Iniciando
+        $(Document).ready(function(){
+            $('#row3').hide();
+            $('#row4').hide();
+            $('#row5').hide();
+            $('#row6').hide();
+            $('#botaoMaisProdutos2').hide();
+            $('#botaoMaisProdutos3').hide();
+            $('#botaoMenosProdutos1').hide();
+            $('#botaoMenosProdutos2').hide();
+            $('#botaoMenosProdutos3').hide();
+            $('#botaoMenosProdutos4').hide();
+            $('#title3').hide();
+            $('#title4').hide();
+        });
+
+        //Botões mais 10 produtos
+        $('#botaoMaisProdutos1').click(function(){
+            $('#row3').show("slow");
+            $('#title3').show();
+            $('#row4').show("slow");
+            $('#botaoMaisProdutos1').hide();
+            $('#botaoMaisProdutos2').show();
+        });
+
+        $('#botaoMaisProdutos2').click(function(){
+            $('#row5').show("slow");
+            $('#title4').show();
+            $('#row6').show("slow");
+            $('#botaoMaisProdutos2').hide();
+            $('#botaoMenosProdutos1').show();
+        });
+
+        //Botões menos 5 produtos
+        $('#botaoMenosProdutos1').click(function(){
+            $('#row6').hide("slow");
+            $('#title4').hide();
+            $('#botaoMenosProdutos1').hide();
+            $('#botaoMenosProdutos2').show();
+        });
+
+        $('#botaoMenosProdutos2').click(function(){
+            $('#row5').hide("slow");
+            $('#botaoMenosProdutos2').hide();
+            $('#botaoMenosProdutos3').show();
+        });
+
+        $('#botaoMenosProdutos3').click(function(){
+            $('#row4').hide("slow");
+            $('#title3').hide();
+            $('#botaoMenosProdutos3').hide();
+            $('#botaoMenosProdutos4').show();
+        });
+
+        $('#botaoMenosProdutos4').click(function(){
+            $('#row3').hide("slow");
+            $('#botaoMenosProdutos4').hide();
+            $('#botaoMaisProdutos1').show();
+        });
+    </script>
+</body><br><br>
+
+<!-- Rodapé -->
+<footer>
+    <b>
+        <br>
+        Copyright © 2018 Floreios e Borrões (1454) <br> 
+        Ligue para: (85) 3.9439-4394 <br>
+        Powered by: Bárbara Stéph. Neves
+    </b><br><br>
+</footer>
+
+</html>

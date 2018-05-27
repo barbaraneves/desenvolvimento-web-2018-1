@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<!-- Desenvolvimento de Software para Web - API 
+     Site de uma loja de produtos: Página com os dados da loja -->
+     
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Floreios e Borrões | Sobre</title>
+
+    <link rel="icon" href="../Imagens/icon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="../Imagens/icon.png" type="image/x-icon" />
+
+    <!-- Arquivo CSS onde contém os estilos para as páginas do site -->
+    <link rel="stylesheet" href="../CSS/floreiosEstilos.css">
+
+    <!-- Usando JQuery para customizar a página -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+    <!-- Widget do JQuery -->
+    <script>
+    $( function() {
+        $("#accordion").accordion();
+    } );
+    </script>
+</head>
+
+<body>
+    <div class="header_dados">
+        <b>Floreios</b><br>
+        <b>&</b><br>
+        <b>Borrões</b>
+        <!-- <img src="Imagens/header.jpg">
+        <p>Resize the browser window to see the responsive effect.</p>  -->
+    </div>
+
+    <!-- Menu de navegação -->
+    <ul>
+        <b>
+            <li><a href="../HTML/floreiosHome.html">Ínicio</a></li>
+            <li><a href="../HTML/floreiosLivraria.html">Produtos</a></li>
+            <li><a href="../HTML/floreiosDados.html">Sobre</a></li>
+            <li style="float: right"><a href="../HTML/floreiosForm.html">Contato</a></li>
+        </b>
+    </ul><br><br>
+
+    <div class="menu">
+        <div class="polaroid gallery_logo" style="margin-left: 180px">
+                <img id="floreiosLogo" src="../Imagens/logo.jpg" 
+                    alt="<br><b>Localização:</b><br><br>Lado Norte, Beco Diagonal, Londres, Inglaterra">
+
+                <div class="container">
+                    <p><b>Livraria "Floreios e Borrões"</b></p>
+                </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <br><br>
+        <div class="title">
+            <h1 style="font-family: Courier New, Courier, monospace; 
+            text-align: center; margin-left: 0px; margin-right: 70px">Sobre a Livraria</h1><br>
+        </div>
+
+        <div class="dados_p">
+            <a href="#">Floreios e Borrões</a> foi estabelecida de vez no Beco Diagonal no ano de 1454. 
+            Ela localiza-se no Lado Norte e é onde a maioria dos alunos de Hogwarts adquire seus 
+            livros escolares.
+        </div>
+
+        <div class="dados_p">
+            A loja teve alguns problemas com certos livros, como 
+            <a href="#">O Livro Invisível da Invisibilidade</a>,
+            que lhes custaram muito dinheiro, embora eles nunca os encontraram, e 
+            <a href="#">O Livro Monstruoso dos Monstros</a>, que já mordeu 
+            o gerente quando ele tentou vender um.
+        </div>
+
+        <div class="dados_p">
+            A Floreios e Borrões também executam um serviço: que permite aos compradores 
+            comprar livros através da entrega das <a href="../HTML/floreiosForm.html">corujas</a>.
+            Eles também tomam ordens antecipadas<br>para livros que estão em alta demanda, 
+            como <a href="#">A Vida e As Mentiras de Alvo Dumbledore</a>.
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="meuModal" class="modal">
+        <span class="close">×</span>
+        <img class="modal-content" id="logo">
+        <div id="caption"></div>
+    </div><br><br><br><br>
+
+    <!-- Script do Modal da logo -->
+    <script>
+        var modal = document.getElementById('meuModal');
+
+        var img = document.getElementById('floreiosLogo');
+        var modalImg = document.getElementById("logo");
+        var captionText = document.getElementById("caption");
+
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <br><br><br><br><br><br><br><br>
+
+    <div class="title">
+        <h1 style="font-family: Courier New, Courier, monospace; text-align: center">
+            História</h1>
+    </div><br>
+
+    <div class="accordion_div" id="accordion">
+        <button class="accordion"><b>1992</b></button>
+        <div><br>
+            <div class="dados">
+                Em Agosto de 1992, o famoso autor bruxo <a href="#">Gilderoy Lockhart</a> 
+                realizou uma manhã de autógrafos de livros na loja e usou-a como uma oportunidade 
+                para anunciar sua tomada do cargo de professor de <a href="#">Defesa Contra as Trevas</a> 
+                na <a href="#">Escola de Magia e Bruxaria de Hogwarts</a> naquele 
+                ano.<br>
+            </div>
+
+            <div class="dados">
+                Em um esforço para ganhar mais publicidade, ele arrastou Harry Potter para o centro 
+                das atenções contra sua vontade e dotou Harry de um conjunto completo de seus livros. 
+                Durante as férias de Natal, a livraria foi fechada temporariamente, 
+                já que ainda estavam arrumando após a manhã de autógrafos do livro de Gilderoy 
+                Lockhart.
+            </div>
+        </div>
+
+        <button class="accordion"><b>1993</b></button>
+        <div><br>
+            <div class="dados">
+                No verão de 1993, a janela da frente da loja segurava uma gaiola de ferro preenchida com 
+                centenas de cópias de <a href="#">O Livro Monstruoso dos Monstros</a>. 
+                Para lidar com os livros viciosos, estabelecidos para as aulas de 
+                <a href="#">Trato das Criaturas Mágicas</a> ministradas por <a href="#">Rúbeo Hagrid</a>, 
+                o gerente assediado teve que se preparar com luvas grossas, já que os livros tendem 
+                a se rasgar.<br>
+            </div>
+
+            <div class="dados">
+                Quando Harry Potter, Hermione Granger e Ronald Weasley foram à loja para comprar 
+                seus livros escolares, o gerente quase chorou quando Ron e Hermione disseram que 
+                queriam duas cópias do <a href="#">O Livro Monstruoso dos Monstros</a>, mas ficou 
+                muito aliviado quando Harry notou que ele já tinha uma cópia.<br>
+            </div>
+
+            <div class="dados">
+                Harry também pediu uma cópia de <a href="#">Esclarecendo o Futuro</a> para o qual o 
+                gerente levou-os a um pequeno canto na parte de trás da loja, onde uma pequena mesa 
+                que continha os seguintes livros:<a href="#">Prevendo o Imprevisível: Proteja-se Contra 
+                Choques</a>, <a href="#">Presságios de Morte: O Que Fazer Quando Se Sabe Que Vai 
+                Acontecer o Pior</a>, e <a href="#">Bolas Rachadas: Quando a Sorte Se Transforma 
+                Em Azar.</a>
+            </div>
+        </div>
+
+        <button class="accordion"><b>1994</b></button>
+        <div><br>
+            <div class="dados">
+                No Verão de 1994, <a href="#">Molly Weasley</a> foi a Floreios e Borrões para obter 
+                três cópias do <a href="#">O Livro Padrão de Feitiços - 4ª série</a> para Harry, 
+                Rony e Hermione.
+            </div>
+        </div>
+    </div>
+
+    <div class="title">
+        <h1 style="font-family: Courier New, Courier, monospace; text-align: center">
+            Os Livros Mais Vendidos</h1>
+    </div><br>
+
+    <!-- Quatro primeiras imagens -->
+    <div class="row">
+        <div class="col-2" style="margin-left: 160px">
+            <div class="gallery">
+                <a target="_blank" href="../Imagens/Vendidos/albus.jpg">
+                    <img src="../Imagens/Vendidos/albus.jpg" width="300" height="200">
+                </a>
+                <div class="desc">
+                    <div style="text-align: left">
+                        <b>A Vida e As Mentiras de Alvo Dumbledore</b>
+                    </div><br>
+                    <div style="text-align: center; font-size: 2vw">
+                        <b>39 Galeões</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2" style="margin-left: 40px">
+            <div class="gallery">
+                <a target="_blank" href="../Imagens/Vendidos/animais.jpeg">
+                    <img src="../Imagens/Vendidos/animais.jpeg" width="300" height="200">
+                </a>
+                <div class="desc">
+                    <div style="text-align: left">
+                        <b>Animais Fantásticos<br>e Onde Habitam</b>
+                    </div><br>
+                    <div style="text-align: center; font-size: 2vw">
+                        <b>2 Galeões</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2" style="margin-left: 40px">
+            <div class="gallery">
+                <a target="_blank" href="../Imagens/Vendidos/magia.jpg">
+                    <img src="../Imagens/Vendidos/magia.jpg" width="300" height="200">
+                </a>
+                <div class="desc">
+                    <div style="text-align: left">
+                        <b>Uma História<br>da Magia</b>
+                    </div><br>
+                    <div style="text-align: center; font-size: 2vw">
+                        <b>2 Galeões</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2" style="margin-left: 40px">
+            <div class="gallery">
+                <a target="_blank" href="../Imagens/Vendidos/quadribol.jpg">
+                    <img src="../Imagens/Vendidos/quadribol.jpg" alt="Contato" width="300" height="200">
+                </a>
+                <div class="desc">
+                    <div style="text-align: left">
+                        <b>Quadribol Através dos Séculos</b>
+                    </div><br>
+                    <div style="text-align: center; font-size: 2vw">
+                        <b>14 Sicles</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body><br><br><br>
+
+<!-- Rodapé -->
+<footer>
+    <b>
+        <br>
+        Copyright © 2018 Floreios e Borrões (1454) <br> 
+        Ligue para: (85) 3.9439-4394 <br>
+        Powered by: Bárbara Stéph. Neves
+    </b><br><br>
+</footer>
+
+</html>

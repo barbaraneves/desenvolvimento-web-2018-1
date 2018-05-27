@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- Desenvolvimento de Software para Web - API 
+     Site de uma loja de produtos: Página para contato com a loja  --> 
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Floreios e Borrões | Corujas</title>
+
+    <link rel="icon" href="../Imagens/icon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="../Imagens/icon.png" type="image/x-icon" />
+
+    <!-- Arquivo CSS onde contém os estilos para as páginas do site -->
+    <link rel="stylesheet" href="../CSS/floreiosEstilos.css">
+
+    <!-- Usando JQuery para a página -->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+
+    <script>
+        $(document).ready(function(){ 
+            $("#telefone").mask('(00) 0.0000-0000', {reverse: false});
+        });
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <b> 
+            Floreios<br>
+            &<br> 
+            Borrões 
+        <b>
+        <!-- <img src="Imagens/header.jpg">
+        <p>Resize the browser window to see the responsive effect.</p>  -->
+    </div>
+
+    <!-- Menu de navegação -->
+    <ul>
+        <b>
+            <li><a href="../HTML/floreiosHome.html">Ínicio</a></li>
+            <li><a href="../HTML/floreiosLivraria.html">Produtos</a></li>
+            <li><a href="../HTML/floreiosDados.html">Sobre</a></li>
+            <li style="float: right"><a href="../HTML/floreiosForm.html">Contato</a></li>
+        </b>
+    </ul><br>
+
+    <div class="title">
+        <h1 style="font-family: Courier New, Courier, monospace">Formulário para Contato</h1>
+    </div><br>
+
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="col-25">
+                    <label for="nome">Nome</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome.">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">E-mail</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="email" name="email" placeholder="Seu e-mail.">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="telefone">Telefone</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="telefone" name="tel" placeholder="Seu telefone.">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="mensagem">Mensagem</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="mesangem" name="mensagem" placeholder="Escreva aqui sua carta." style="height:200px"></textarea>
+                </div>
+            </div><br><br>
+
+            <div class="row">
+                <input type="submit" value="Envie sua Coruja">
+            </div>
+        </form>
+    </div>
+</body><br><br><br>
+
+<!-- Rodapé -->
+<footer>
+    <b>
+        <br>
+        Copyright © 2018 Floreios e Borrões (1454) <br> 
+        Ligue para: (85) 3.9439-4394 <br>
+        Powered by: Bárbara Stéph. Neves
+    </b><br><br>
+</footer>
+
+</html>
