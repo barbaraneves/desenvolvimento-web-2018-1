@@ -22,7 +22,7 @@ Parte 2 - Página utilizando HTML e CCS, com as classes do Bootstrap;
 
 ### Atividade 3
 
-Alguns exercícios em JavaScript presentes em *exerciciosJavaScript.pdf*.
+Alguns exercícios em JavaScript presentes em [exerciciosJavaScript.pdf](https://github.com/barbaraneves/softwareParaWeb/blob/master/TrabalhosWeb/Trabalho%203/exerciciosJavaScript.pdf).
 
 ### Atividade 3.1/Extra
 
