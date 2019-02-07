@@ -1,6 +1,6 @@
 # Repositório que contém as atividades da disciplina de Desenvolvimento de Software para Web
 
-- Atividade 1:
+# Atividade 1:
 
 Parte 1 - Página HTML que deve conter pelo menos 5 elementos em bloco e 5 elementos em linha e uma imagem relacionada ao seu conteúdo;
 
