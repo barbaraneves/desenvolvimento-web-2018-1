@@ -4,7 +4,7 @@ Repositório que contém as atividades da disciplina de Desenvolvimento de Softw
 
 ## Tecnologias
 
-HTML, CSS, JavaScript, Bootstrap, Java e Spring.
+HTML, CSS, JavaScript, Bootstrap, Java e Spring Boot.
 
 ### Atividade 1
 
