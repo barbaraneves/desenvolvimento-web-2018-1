@@ -6,6 +6,8 @@ Repositório que contém as atividades da disciplina de Desenvolvimento de Softw
 
 HTML, CSS, JavaScript, Bootstrap, Java e Spring Boot.
 
+## Atividades
+
 ### Atividade 1
 
 Parte 1 - Página HTML que deve conter pelo menos 5 elementos em bloco e 5 elementos em linha e uma imagem relacionada ao seu conteúdo;
